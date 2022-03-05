@@ -1,0 +1,11 @@
+:save
+(
+echo %example1%
+echo %example2%
+)>save.dlb
+
+:load
+(
+set /p example1=
+set /p example2=
+)<save.dlb
